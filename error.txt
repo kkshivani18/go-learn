@@ -1,0 +1,23 @@
+what's the problem - Failed resources:
+GoCdkAwsStack | 1:51:33 am | CREATE_FAILED        | AWS::ApiGateway::Stage      | myAPIGateway/DeploymentStage.prod (myAPIGatewayDeploymentStageprodE7F94E71) Resource handler returned message: "CloudWatch Logs role ARN must be set in account settings to enable logging (Service: ApiGateway, Status Code: 400, Request ID: a77ac910-fbf1-47d8-82cd-2e00a6278704) (SDK Attempt Count: 1)" (RequestToken: b8e49c0b-611d-9101-1429-f29ce3622c31, HandlerErrorCode: InvalidRequest)
+
+NOTICES         (What's this? https://github.com/aws/aws-cdk/wiki/CLI-Notices)
+
+34892   CDK CLI collects telemetry data on command usage starting at version 2.1100.0 (unless opted out)
+
+        Overview: We do not collect customer content and we anonymize the
+                  telemetry we do collect. See the attached issue for more
+                  information on what data is collected, why, and how to
+                  opt-out. Telemetry will NOT be collected for any CDK CLI
+                  version prior to version 2.1100.0 - regardless of
+                  opt-in/out. You can also view the telemetry we collect by
+                  logging it to a local file, by adding
+                  `--telemetry-file=my/local/file` to any `cdk` command.
+
+        Affected versions: cli: ^2.1100.0
+
+        More information at: https://github.com/aws/aws-cdk/issues/34892
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 34892".
+❌  GoCdkAwsStack failed: ToolkitError: The stack named GoCdkAwsStack failed to deploy: UPDATE_ROLLBACK_COMPLETE: Resource handler returned message: "CloudWatch Logs role ARN must be set in account settings to enable logging (Service: ApiGateway, Status Code: 400, Request ID: a77ac910-fbf1-47d8-82cd-2e00a6278704) (SDK Attempt Count: 1)" (RequestToken: b8e49c0b-611d-9101-1429-f29ce3622c31, HandlerErrorCode: InvalidRequest)?
